@@ -1,0 +1,1 @@
+// script.js is intentionally left blank.
