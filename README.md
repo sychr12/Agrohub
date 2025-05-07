@@ -1,2 +1,3 @@
 # Trabalho-de-web
-Grupo dos cornos mansos kkkkkkkkkkkkkk
+
+O AgroHub é uma plataforma colaborativa que conecta profissionais e entusiastas do setor agropecuário. Nosso objetivo é criar um espaço seguro e interativo onde as pessoas possam compartilhar notícias e informações atualizadas sobre o mundo agro. O projeto permite que os usuários compartilhem conteúdos provenientes de canais verificados e fontes confiáveis, garantindo a veracidade das informações. Além disso, a plataforma promove a troca de conhecimento entre os participantes, incentivando a construção de uma rede de apoio e aprendizado no setor agro. Acreditamos que o acesso a informações de qualidade é essencial para o crescimento e inovação do setor, e nosso compromisso é manter um ambiente inclusivo, transparente e informativo para todos os envolvidos.
