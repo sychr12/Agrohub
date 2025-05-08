@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroHub - Fórum Rural</title>
+    <!-- Linkando o arquivo de estilos -->
+    <link rel="stylesheet" href="/src/public/css/home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho do site -->
+    <header>
+      <div class="logo">
+        <img src="/src/public/css/Agrohub1.webp" alt="Logo AgroHub" />
+        AgroHub
+      </div>
+      <div class="search-container">
+        <img
+          src="/src/public/css/searchpreto32px.png"
+          alt="Pesquisar"
+          class="lupa-icon"
+        />
+        <input type="text" placeholder="Pesquisar..." class="search" />
+      </div>
+      <nav>
+        <a href="#" title="Página Inicial"
+          ><i class="bx bxs-home"></i>
+        <a href="#" title="Amizades"
+          ><i class='bx bxs-user'></i>
+        <a href="#" title="Mensagens"
+          ><i class='bx bxs-message-detail'></i>
+        <a href="#" title="Notificações"
+          ><i class="bx bxs-bell"></i>
+      </nav>
+      <div class="user-options">
+        <a href="perfil.html">
+          <img
+            src="/src/public/css/silviofoto.jpg"
+            alt="Perfil"
+            class="perfil-img"
+          />
+        </a>
+        <select class="idioma">
+          <option value="pt-br">PT-BR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <button id="darkModeBtn">
+          <i class="bx bxs-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal dividido em barra lateral e conteúdo -->
+    <main>
+      <!-- Barra lateral com temas em alta -->
+      <aside class="sidebar">
+        <h3>Temas em alta</h3>
+        <ul>
+          <li>Exportações de carne batem recorde</li>
+          <li>Preços do boi gordo</li>
+          <li>Maior usina de biogás</li>
+          <li>Preços mínimos do café</li>
+        </ul>
+      </aside>
+
+      <!-- Área principal de postagens -->
+      <div class="publicar-box">
+        <div class="publicar-topo">
+          <img
+            src="/src/public/css/silviofoto.jpg"
+            alt="Perfil"
+            class="perfil-img"
+          />
+          <input
+            type="text"
+            placeholder="Compartilhe uma notícia..."
+            class="publicar-input"
+          />
+        </div>
+
+        <!-- Botões para publicar notícias -->
+        <div class="publicar-acoes">
+          <button>
+            <a href="#" title="Midia"><i class='bx bxs-image-add'></i></a>
+          </button>
+          <button>
+           <a href="#" title="Questionário"><i class='bx bxs-book-open'></i></a>
+          </button>
+          <button>
+           <a href="#" title="Artigo"><i class='bx bxs-spreadsheet'></i></a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Postagem -->
+      <div class="post">
+        <div class="post-header">
+          <img
+            src="/src/public/css/canalruralperfil.png"
+            class="canal-logo"
+            alt="Canal Rural"
+          />
+          <strong><br />Canal Rural <br />- 1d atrás</strong>
+        </div>
+        <h2>JBS Ajudou A Regularizar 15 Mil Propriedades Rurais Em 4 Anos.</h2>
+        <p>
+          Iniciativa ofereceu assistência que contribuiu com a reposição de mais
+          de quatro mil hectares de vegetação nativa...
+        </p>
+        <img
+          src="/src/public/css/vaquinha.jpg"
+          class="post-bezerro"
+          alt="Vaca e bezerro"
+        />
+        <!-- Ações do post -->
+        <div class="post-actions">
+          <button id="likeBtn">👍 Gostei (<span id="likes">0</span>)</button>
+          <button id="commentBtn">💬 Comentar</button>
+          <button>🔄 Compartilhar</button>
+        </div>
+        <!-- Comentários aparecerão aqui -->
+        <div id="comentarios"></div>
+      </div>
+        <!-- Balão dos salvos -->
+      <aside class="painel-lateral">
+        <div class="atalhos">
+          <a href="#" title="Itens Salvos">
+            <i class="bx bxs-bookmark"></i>
+          </a>
+          <a href="#" title="Grupos">
+            <i class="bx bxs-group"></i>
+          </a>
+          <a href="#" title="Instituições">
+            <i class="bx bxs-building"></i>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Área de mensagens -->
+      <div class="balao-mensagens">
+        <div class="cabecalho-mensagens" onclick="toggleMensagens()">
+          <img src="/src/public/css/silviofoto.jpg" alt="Perfil" class="avatar-msg">
+          <span>Mensagens</span>
+          <div class="acoes-msg">
+            <button title="Nova conversa"><i class='bx bx-edit-alt'></i></button>
+            <button title="Gerenciar"><i class='bx bx-cog'></i></button>
+            <button title="Expandir"><i class='bx bx-chevron-up' id="toggle-icon"></i></button>
+          </div>
+        </div>
+      
+        <div class="corpo-mensagens" id="corpoMensagens">
+          <ul class="lista-conversas">
+            <li>João - Online</li>
+            <li>Maria - Última vez há 1h</li>
+            <li>Lucas - Digitando...</li>
+          </ul>
+          <button class="nova-conversa">➕ Nova conversa</button>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- Linkando o arquivo JavaScript -->
+    <script src="/src/public/js/home.js"></script>
+  </body>
+</html>
