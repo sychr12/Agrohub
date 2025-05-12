@@ -1,0 +1,354 @@
+/*icones importados boxicons*/
+.bx {
+    font-size: 22px;
+    color: #000000;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .bx:hover {
+    transform: scale(1.1);
+  }
+
+/* =======================
+   Estilo principal do AgroHub
+   ======================= */
+
+/* Estilo geral da página */
+body {
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Fonte principal */
+    background-color: #d4d0d0; /* Cor de fundo */
+    padding-bottom: 60px; /* Espaço inferior da página */
+    background-image: url("img/Fundo/meiocinza.jpg");
+    background-size: cover; /* cobre toda a tela */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    background-position: center; /* centraliza a imagem */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição para modo escuro */
+  }
+  
+  /* Estilo para modo escuro */
+  body.dark-mode {
+    background-image: none; /* remove a imagem */
+    background-color: #121212; /* Cor de fundo escura */
+    color: #f5f5f5; /* Cor do texto clara */
+  }
+  
+  /* Aplica o modo escuro a diversos componentes */
+  body.dark-mode header,
+  body.dark-mode footer,
+  body.dark-mode .sidebar,
+  body.dark-mode .post,
+  body.dark-mode .publicar-box,
+  body.dark-mode .publicar-acoes,
+  body.dark-mode .painel-lateral,
+  body.dark-mode .balao-mensagens,
+  body.dark-mode .cabecalho-mensagens,
+  body.dark-mode .corpo-mensagens {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #f5f5f5; /* Texto claro */
+  }
+  
+  /* Botão de alternar modo escuro */
+  #darkModeBtn {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    font-size: 20px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de clique */
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex; /* Layout flexível horizontal */
+    background-color: #ffffff; /* Fundo branco */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: flex-start; /* Espaço entre logo, pesquisa e navegação */
+    padding: 25px 20px; /* Espaçamento interno */
+    border-bottom: 1px solid #ddd; /* Linha inferior */
+    gap: 20px; /* Espaço entre os elementos */
+  }
+  
+  /* Container do logo */
+  .logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+  }
+  
+  .logo img {
+    width: 32px; /* Tamanho igual ao texto */
+    height: 32px; /* Altura */
+    margin-right: 8px; /* Espaço entre imagem e texto */
+    border-radius: 100%; /* Arredonda a imagem */
+  }
+  
+  /* Container do campo de busca */
+  .search-container {
+    position: relative; /* Para posicionar o ícone da lupa */
+  }
+  
+  /* Ícone da lupa */
+  .lupa-icon {
+    position: absolute;
+    left: 30px; /* Posição à esquerda */
+    top: 50%; /* Centro vertical */
+    transform: translateY(-50%); /* Ajuste fino vertical */
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Campo de busca */
+  .search {
+    padding: 7px; /* Espaçamento interno */
+    border-radius: 30px; /* Borda arredondada */
+    border: 1px solid #bab8b8; /* Cor da borda */
+    width: 400px; /* Largura */
+    margin-left: 20px; /* Espaço à esquerda */
+    padding-left: 30px; /* Espaço pro ícone não ficar em cima do texto */
+  }
+  
+  /* Navegação */
+  nav {
+    margin-left: 250px; /* Ajusta a posição dos ícones */
+  }
+  
+  /* Links da navegação */
+  nav a {
+    margin: 0 10px; /* Espaçamento entre links */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  /* Área principal */
+  main {
+    display: flex; /* Layout flexível */
+    padding: 20px; /* Espaçamento interno */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 30px; /* Espaço entre os elementos */
+  }
+  
+  /* Opções do usuário no topo */
+  .user-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Empurra para o canto direito */
+  }
+  
+  /* Imagem de perfil */
+  .perfil-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Imagem circular */
+    cursor: pointer; /* Cursor de clique */
+  }
+  
+  /* Seletor de idioma */
+  .idioma {
+    padding: 7px; /* Espaçamento interno */
+    border-radius: 30px; /* Borda arredondada */
+    border: 1px solid #bab8b8; /* Cor da borda */
+    width: 80px; /* Largura */
+    margin-left: 20px;
+  }
+  
+  /* Balão de upload de arquivos */
+  .file-upload-box {
+    width: 80%;
+    max-width: 800px; /* Aumentando a largura do balão */
+    min-height: 450px; /* Garante altura inicial */
+    height: auto; /* Deixa crescer com o conteúdo */
+    overflow: hidden; /* Impede quebra feia */
+    margin: 30px auto; /* Espaço entre o cabeçalho e o balão */
+    padding: 30px; /* Aumentando o padding interno */
+    background-color: #fff;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .file-upload-box h3 {
+    font-size: 22px; /* Aumenta o tamanho da fonte */
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .file-upload-box p {
+    font-size: 16px; /* Aumenta o tamanho da descrição */
+    color: #888;
+    margin-bottom: 25px;
+  }
+  
+  /* Centraliza o ícone no balão */
+  .file-upload-icon {
+    font-size: 60px; /* Tamanho do ícone */
+    margin-bottom: 25px;
+    color: #4CAF50; /* Cor do ícone */
+  }
+  
+  /* Estilo do botão de upload */
+  #file-upload-btn {
+    margin-left: 700px;
+    margin-top: 120px;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #file-upload-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Oculta o input nativo */
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+/* Estilo do botão personalizado */
+.custom-label {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-label:hover {
+  background-color: #45a049;
+}
+
+/* Ícone opcional do boxicons */
+.custom-label i {
+  margin-right: 8px;
+  color: #fff;
+}
+  
+  /* Pré-visualização do arquivo */
+  #file-preview {
+    margin-top: 25px;
+  }
+  
+  #file-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+  }
+  
+  #file-preview video {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .file-upload-box {
+      width: 90%;
+      height: 400px; /* Ajusta a altura no celular */
+      padding: 25px;
+    }
+  
+    .file-upload-box h3 {
+      font-size: 18px;
+    }
+  
+    .file-upload-box p {
+      font-size: 14px;
+    }
+  
+    .file-upload-icon {
+      font-size: 50px;
+    }
+  
+    input[type="file"] {
+      width: 100%;
+    }
+  
+    button {
+      font-size: 14px;
+
+    }
+  }
+  /*figurinha de upload*/
+  .file-upload-img {
+    margin-bottom: 25px;
+  }
+  
+  .file-upload-img img {
+    width: 100px;     /* Tamanho da figurinha */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+/* Área de visualização leve */
+#file-preview img,
+#file-preview video {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão de avançar */
+.next-button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #198754;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.next-button:hover {
+  background-color: #157347;
+}
+
+#file-preview-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .file-upload-box {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+
+body.dark-mode .custom-label {
+  background-color: #2e7d32;
+}
+
+body.dark-mode .custom-label:hover {
+  background-color: #256b28;
+}
+
+
+
+
+
+
+
+

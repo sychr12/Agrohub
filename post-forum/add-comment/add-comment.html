@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroHub - Comentário</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="add-comment.css" />
+  <!-- icones -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- CSS do CropperJS -->
+  <link href="https://unpkg.com/cropperjs/dist/cropper.min.css" rel="stylesheet" />
+  <!-- JS do CropperJS -->
+  <script src="https://unpkg.com/cropperjs"></script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="img/LogoTemp/Agrohub1.webp" alt="Logo AgroHub" />
+      AgroHub
+    </div>
+    <div class="search-container">
+      <img src="img/icones/Lupas/searchpreto32px.png" class="lupa-icon" />
+      <input type="text" placeholder="Pesquisar..." class="search" />
+    </div>
+    <nav>
+      <a href="#"><i class="bx bxs-home"></i></a>
+      <a href="#"><i class="bx bxs-user"></i></a>
+      <a href="#"><i class="bx bxs-message-detail"></i></a>
+      <a href="#"><i class="bx bxs-bell"></i></a>
+    </nav>
+    <div class="user-options">
+      <a href="perfil.html">
+        <img src="img/Fotodeperfil/silviofoto.jpg" alt="Perfil" class="perfil-img" />
+      </a>
+      <select class="idioma">
+        <option value="pt-br">PT-BR</option>
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="darkModeBtn"><i class="bx bxs-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- Área de comentário -->
+  <main>
+    <div class="comment-box">
+      <h2>Finalize sua publicação</h2>
+       <div class="preview-container">
+         <img id="preview-img" src="" alt="Pré-visualização" />
+         <button class="edit-btn" title="Editar imagem"><i class='bx bxs-edit'></i></button>
+           <div id="crop-container" style="display: none;">
+             <img id="crop-image" src="" alt="Imagem para recorte" />
+             <button id="confirm-crop" class="crop-confirm-btn">Confirmar Recorte</button>
+             <button id="cancel-crop" style="margin-left: 10px; background-color: #dc3545;">Cancelar</button>
+            </div>
+        </div>
+    
+      <textarea placeholder="Digite seu comentário..." id="comentario"></textarea>
+      <button id="postarBtn">Publicar</button>
+    </div>
+  </main>
+
+  <script src="add-comment.js"></script>
+</body>
+</html>
