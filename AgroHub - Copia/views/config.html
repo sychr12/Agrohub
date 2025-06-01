@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/config.css" />
+    <link rel="icon" href="/public/css/Agrohub1.webp" type="image/x-icon" />
+    <title>Agrohub</title>
+    <link rel="icon" href="/public/img/Agrohub1.webp" type="image/png" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <!-- Barra lateral -->
+      <div class="sidebar">
+        <div class="configuracoes">
+          <h2>Configurações</h2>
+          <hr />
+          <ul>
+            <li>
+              <i class="bx bx-user-circle"></i> <a href="#Contas">Contas</a>
+            </li>
+            <p>Senhas, seguranças, dados pessoais, preferências de anúncios</p>
+          </ul>
+          <hr />
+        </div>
+
+        <div class="perfil-usuario">
+          <h2>Como você usa o AgroHub</h2>
+          <ul>
+            <li><i class="bx bx-bookmark"></i> <a href="#Salvos">Salvos</a></li>
+            <li>
+              <i class="bx bx-pie-chart"></i>
+              <a href="#Itens Arquivados">Itens Arquivados</a>
+            </li>
+            <li>
+              <i class="bx bx-calendar"></i>
+              <a href="#Sua Atividade">Sua Atividade</a>
+            </li>
+            <li>
+              <i class="bx bx-bell"></i>
+              <a href="#Notificações">Notificações</a>
+            </li>
+            <li>
+              <i class="bx bx-time-five"></i>
+              <a href="#Gerenciamento de Tempo">Gerenciamento de Conta</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="centro-ajuda">
+          <h2>Centro de Ajuda</h2>
+          <ul>
+            <li>
+              <i class="bx bx-help-circle"></i> <a href="#Ajuda">Ajuda</a>
+            </li>
+            <li>
+              <i class="bx bx-support"></i> <a href="#Suporte">Suporte</a>
+            </li>
+            <li>
+              <i class="bx bx-shield"></i>
+              <a href="#Privacidade">Privacidade</a>
+            </li>
+            <li>
+              <i class="bx bx-lock"></i> <a href="#Segurança">Segurança</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="outras-configuracoes">
+          <h2>Outras Configurações</h2>
+          <ul>
+            <li>
+              <i class="bx bx-cog"></i>
+              <a href="#Configurações">Configurações</a>
+            </li>
+            <li>
+              <i class="bx bx-log-out"></i>
+              <a href="/views/login.html">Logoff</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rodape">
+          <p>AgroHub &copy; 2025</p>
+          <p>Todos os direitos reservados</p>
+        </div>
+      </div>
+
+      <!-- Conteúdo principal -->
+      <div class="rebolando-lentinho-pros-crias">
+        <div id="account-settings" class="tab-content active">
+          <h2>Configurações da Conta</h2>
+
+          <form id="godevoar-melhor-pokemon">
+            <div class="tosemcriatividade">
+              <label for="username">Nome de usuário</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                value="Canal Rural"
+              />
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="usuario@exemplo.com"
+              />
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value="senha123"
+              />
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="profile-pic">Foto de perfil</label>
+              <input type="file" id="profile-pic" name="profile_pic" />
+            </div>
+
+            <hr />
+
+            <div class="tosemcriatividade">
+              <label for="language">Idioma</label>
+              <select id="language" name="language">
+                <option value="pt">Português</option>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+              </select>
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="favela">Cidade</label>
+              <select id="favela" name="favela">
+                <option value="manaus">Manaus</option>
+                <option value="rio_grande">Rio Grande</option>
+                <option value="sao_paulo">São Paulo</option>
+                <option value="brasilia">Brasília</option>
+                <option value="jequie">Jequié</option>
+                <option value="francisco_morato">Francisco Morato</option>
+                <option value="campo_grande">Campo Grande</option>
+                <option value="joao_pessoa">João Pessoa</option>
+                <option value="campina_grande">Campina Grande</option>
+                <option value="ribeirao_preto">Ribeirão Preto</option>
+                <option value="guaraja">Guarajá</option>
+                <option value="nova_friburgo">Nova Friburgo</option>
+                <option value="sao_jose_dos_campos">São José dos Campos</option>
+                <option value="juiz_de_fora">Juiz de Fora</option>
+              </select>
+            </div>
+
+            <div class="serioquee27estadosmasquitem26">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado">
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+              </select>
+            </div>
+
+            <div class="aniversario">
+              <label for="ultimo-aniversario">Data de Nascimento</label>
+              <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                value="2004-05-02"
+              />
+            </div>
+
+            <hr />
+
+            <div class="rede-sociais">
+              <label for="social-media">Redes Sociais</label>
+              <div class="social-media-inputs">
+                <div class="tosemcriatividade">
+                  <label for="facebook">Facebook</label>
+                  <input
+                    type="text"
+                    id="facebook"
+                    name="facebook"
+                    value="https://www.facebook.com/usuario"
+                  />
+                </div>
+
+                <div class="tosemcriatividade">
+                  <label for="twitter">Twitter</label>
+                  <input
+                    type="text"
+                    id="twitter"
+                    name="twitter"
+                    value="https://www.twitter.com/usuario"
+                  />
+                </div>
+
+                <div class="tosemcriatividade">
+                  <label for="instagram">Instagram</label>
+                  <input
+                    type="text"
+                    id="instagram"
+                    name="instagram"
+                    value="https://www.instagram.com/usuario"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" value="12345-678" />
+            </div>
+
+            <div class="tosemcriatividade">
+              <label for="newBio">Biografia:</label>
+              <textarea
+                id="newBio"
+                placeholder="Adicione uma biografia"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="save-btn">Salvar Alterações</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/js/config.js"></script>
+  </body>
+</html>
