@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrohub</title>
+    <link rel="icon" href="/public/img/Agrohub1.webp" type="image/png" />
+    <link rel="stylesheet" href="\public\css\post.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho do site -->
+    <header>
+      <div class="logo">
+        <img src="/public/img/Agrohub1.webp" alt="Logo AgroHub" />
+        AgroHub
+      </div>
+      <div class="search-container">
+        <img
+          src="/public/img/searchpreto32px.png"
+          alt="Pesquisar"
+          class="lupa-icon"
+        />
+        <input type="text" placeholder="Pesquisar..." class="search" />
+      </div>
+      <nav>
+        <a href="/views/home.html" title="Página Inicial"
+          ><i class="bx bxs-home"></i
+        ></a>
+        <a href="/views/amigos.html" title="Amizades"
+          ><i class="bx bxs-user"></i
+        ></a>
+        <a href="#" title="Mensagens"><i class="bx bxs-message-detail"></i></a>
+        <a href="#" title="Notificações"><i class="bx bxs-bell"></i></a>
+      </nav>
+      <div class="user-options">
+        <a href="/views/perfil.html">
+          <img
+            src="/public/img/canalruralperfil.png"
+            alt="Perfil"
+            class="perfil-img"
+          />
+        </a>
+        <select class="idioma">
+          <option value="pt-br">PT-BR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <button id="darkModeBtn">
+          <i class="bx bxs-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="file-upload-box">
+      <h3>Selecione arquivos para começar</h3>
+      <p>Compartilhe imagens ou um único vídeo na sua publicação.</p>
+
+      <div class="file-upload-img">
+        <img src="/public/img/pasta.png" alt="Upload" />
+      </div>
+      <!-- Input para upload com botão estilizado -->
+      <div class="custom-file-upload">
+        <label for="file-upload" class="custom-label">
+          <i class="bx bx-upload"></i> Selecionar arquivo
+        </label>
+        <input type="file" id="file-upload" accept="image/*,video/*" />
+      </div>
+
+      <!-- Pré-visualização leve e discreta -->
+      <div id="file-preview-container">
+        <div id="file-preview"></div>
+      </div>
+
+      <!-- Botão avançar (inicialmente oculto) -->
+      <button id="next-btn" class="next-button" style="display: none">
+        Avançar
+      </button>
+    </div>
+
+    <!-- Linkando o arquivo JavaScript -->
+    <script src="public/js/post.js"></script>
+  </body>
+</html>
